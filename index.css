@@ -1,0 +1,57 @@
+h1 {
+    color: limegreen;
+    font-family: "Jacques Francois Shadow", serif;
+}
+
+.container {
+    background-color: aqua;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    background-color: red !important;
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.hide-dekstop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+/* Table View */
+@media (max-width: 768px) {
+
+    h1 {
+        color: darkorange;
+    }
+
+    .col {
+        width: 45%;
+    }
+
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+
+    h1 {
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+}
